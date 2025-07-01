@@ -1,13 +1,13 @@
 import Image from "next/image";
 import { Rubik } from 'next/font/google'
 
-const rubik = Rubik({ subsets: ['latin'], weight: ['400', '600'] })
+const rubik = Rubik({ subsets: ['latin'], weight: ['500'] })
 
 export default function Header() {
     return(
-        <header className="mt-8 lg:mt-10">
+        <header className="mt-8 lg:mt-10 flex items-center mb-14">
             <Image src="/Images/hexacloudlogo.svg" className="mr-2" alt="" width={32} height={36} />
-            <h1 className={`${rubik.className} font-semibold text-xl`}>HexaCLOUD</h1>
+            <h1 className={`${rubik.className} font-semibold text-xl text-[#0B132A]`}>HexaCLOUD</h1>
         </header>
     )
 }

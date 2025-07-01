@@ -13,7 +13,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pt-br">
-      <body className="px-6 md:px-12 lg:px-24">
+      <body className="px-6 md:px-12 lg:px-48">
         {children}
       </body>
     </html>
