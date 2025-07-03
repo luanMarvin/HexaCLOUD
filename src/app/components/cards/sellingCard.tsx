@@ -28,11 +28,11 @@ export default function SellingCard({ planName, features, price }: SellingCardPr
         ))}
       </div>
 
-      <p className='text-[#0B132A] text-base font-medium'>
-        <strong>{price}</strong> {!isGratis && <span>/ Mês</span>}
+      <p className='text-[#0B132A] font-medium text-2xl'>
+        <strong>{price}</strong> {!isGratis && <span className='text-[#4F5665] font-normal'>/ mês</span>}
       </p>
 
-      <a href='' className='mt-4 text-blue-600 font-medium'>Assinar</a>
+      <a href='' className={`${rubik.className} mt-4 border-[#F53838] border-[1px] bg-[#fff] text-[#F53838] font-medium shadow-[0_5px_8px_rgba(245,56,56,0.2)] rounded-4xl px-9 py-2 `}>Assinar</a>
     </div>
   );
 }

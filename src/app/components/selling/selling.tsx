@@ -10,8 +10,8 @@ export default function Selling() {
         <p className={`${rubik.className} text-[#4F5665]`}>Vamos escolher o plano ideal para você e explorá-lo com alegria e leveza.</p>
         <div className="flex mt-18 mb-[200px]">
             <SellingCard planName="Plano Gratuito" features={['Largura de banda ilimitada', 'Conexão criptografada', 'Sem registros de tráfego', 'Funciona em todos os dispositivos']} price='Grátis'></SellingCard>
-            <SellingCard planName="Plano Padrão" features={['Largura de banda ilimitada', 'Conexão criptografada', 'Registros de tráfego', 'Funciona em todos os dispositivos', 'Conecte-se de qualquer lugar']} price='29,90'></SellingCard>
-            <SellingCard planName="Plano Premium" features={['Largura de banda ilimitada', 'Conexão criptografada', 'Registros de tráfego', 'Funciona em todos os dispositivos', 'Conecte-se de qualquer lugar', 'Acesse novos recursos']} price='49,90'></SellingCard>
+            <SellingCard planName="Plano Padrão" features={['Largura de banda ilimitada', 'Conexão criptografada', 'Registros de tráfego', 'Funciona em todos os dispositivos', 'Conecte-se de qualquer lugar']} price='R$ 29,90'></SellingCard>
+            <SellingCard planName="Plano Premium" features={['Largura de banda ilimitada', 'Conexão criptografada', 'Registros de tráfego', 'Funciona em todos os dispositivos', 'Conecte-se de qualquer lugar', 'Acesse novos recursos']} price='R$ 49,90'></SellingCard>
         </div>
     </div>
     );

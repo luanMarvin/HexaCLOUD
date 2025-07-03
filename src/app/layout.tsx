@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import Footer from './components/footer/footer';
+import Header from './components/header/header';
 
 export const metadata: Metadata = {
   title: "HexaCLOUD",
@@ -12,10 +14,14 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="pt-br">
-      <body className="px-6 md:px-12 lg:px-48">
+  <html lang="pt-br">
+  <body>
+      <Header />
+      <main className="px-6 md:px-12 lg:px-48 flex flex-col min-h-screen">
         {children}
-      </body>
-    </html>
+      </main>
+      <Footer />
+  </body>
+</html>
   );
 }
