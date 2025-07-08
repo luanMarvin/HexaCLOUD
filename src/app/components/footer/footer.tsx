@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import Logo from '../../../../public/Images/hexacloudlogo.svg';
-import Facebook from '../../../../public/Images/Facebook.png';
-import Instagram from '../../../../public/Images/Instagram.png';
+import Facebook from '../../../../public/Images/face.png';
+import Instagram from '../../../../public/Images/insta.png';
 import { Rubik } from 'next/font/google';
 
 const rubik = Rubik({ subsets: ['latin'], weight: ['400', '500'] });
