@@ -19,13 +19,13 @@ export default function SellingCard({ planName, features, price }: SellingCardPr
   const isGratis = price.toLowerCase() === 'grátis';
 
   return (
-    <div className={`${rubik.className} border-[2px] border-[#DDDDDD] rounded-2xl flex flex-col items-center justify-between p-6 selection:text-[#FFFFFF] selection:bg-[#F53838]`}>
-      <motion.div initial={scaleIn.initial} whileInView={scaleIn.animate} transition={easeIn} viewport={{ once: true, amount: 0.5 }}>
-        <Image src={Box} alt='' />
+    <div className={`${rubik.className} lg:h-auto h-[540px] border-[2px] border-[#DDDDDD] hover:border-[#F53838] duration-500 hover:scale-105 rounded-2xl flex flex-col items-center justify-between lg:p-6 p-4 selection:text-[#FFFFFF] selection:bg-[#F53838]`}>
+      <motion.div initial={scaleIn.initial} whileInView={scaleIn.animate} transition={easeIn} viewport={{ once: true, amount: 0.5 }} className='lg:block flex items-center justify-center'>
+        <Image src={Box} alt='' draggable={false} className='lg:w-[146px] w-[100%]'/>
       </motion.div>
-      <h1 className='text-[#0B132A] text-lg font-medium mt-4 selection:text-[#FFFFFF] selection:bg-[#F53838]'>{planName}</h1>
+      <h1 className='text-[#0B132A] text-lg font-medium lg:mt-4 mt-2 selection:text-[#FFFFFF] selection:bg-[#F53838]'>{planName}</h1>
 
-      <div className='flex flex-col gap-2 my-4'>
+      <div className='flex flex-col lg:gap-2 lg:my-4 gap-1 my-2'>
         {features.map((feature, index) => (
           <div key={index} className='flex items-center selection:text-[#FFFFFF] selection:bg-[#F53838]'>
             <Image src={Check} alt='' className='mr-2 selection:text-[#FFFFFF] selection:bg-[#F53838]' />
