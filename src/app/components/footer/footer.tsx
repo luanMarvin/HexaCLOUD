@@ -21,8 +21,8 @@ export default function Footer() {
           </p>
 
           <div className="flex gap-4 mb-4">
-            <a href="#"><Image src={Facebook} alt="Facebook" width={24} height={24} draggable={false} /></a>
-            <a href="#"><Image src={Instagram} alt="Instagram" width={24} height={24} draggable={false} /></a>
+            <a href="#"><Image src={Facebook} alt="Facebook" width={24} height={24} draggable={false} className='hover:scale-125 transition-transform duration-300 ease-in-out'/></a>
+            <a href="#"><Image src={Instagram} alt="Instagram" width={24} height={24} draggable={false} className='hover:scale-125 transition-transform duration-300 ease-in-out'/></a>
           </div>
 
           <p className="text-[#AFB5C0] selection:text-[#FFFFFF] selection:bg-[#F53838]">©2020 HexaCLOUD</p>

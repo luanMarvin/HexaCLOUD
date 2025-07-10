@@ -1,7 +1,11 @@
+'use client';
+
 import Image from 'next/image';
 import Box from '../../../../public/Images/box.png';
 import Check from '../../../../public/Images/check.svg';
 import { Rubik } from 'next/font/google';
+import { motion } from 'motion/react';
+import { easeIn, scaleIn } from '../animations/animations';
 
 const rubik = Rubik({ subsets: ['latin'], weight: ['400', '500'] });
 
@@ -16,7 +20,9 @@ export default function SellingCard({ planName, features, price }: SellingCardPr
 
   return (
     <div className={`${rubik.className} border-[2px] border-[#DDDDDD] rounded-2xl flex flex-col items-center justify-between p-6 selection:text-[#FFFFFF] selection:bg-[#F53838]`}>
-      <Image src={Box} alt='' />
+      <motion.div initial={scaleIn.initial} whileInView={scaleIn.animate} transition={easeIn} viewport={{ once: true, amount: 0.5 }}>
+        <Image src={Box} alt='' />
+      </motion.div>
       <h1 className='text-[#0B132A] text-lg font-medium mt-4 selection:text-[#FFFFFF] selection:bg-[#F53838]'>{planName}</h1>
 
       <div className='flex flex-col gap-2 my-4'>
